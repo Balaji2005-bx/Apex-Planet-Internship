@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form & To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Webpage</h1>
-        <p>This is a simple webpage created with HTML, styled with CSS, and made interactive with JavaScript.</p>
-    </header>
+  <!-- Contact Form Section -->
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage" class="error"></p>
+  </div>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! I’m learning how to build webpages using HTML, CSS, and JavaScript. This is my first project!</p>
-            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-        </section>
+  <!-- To-Do List Section -->
+  <div class="container">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addTaskButton">Add Task</button>
+    <ul id="taskList"></ul>
+  </div>
 
-        <section>
-            <h2>Useful Links</h2>
-            <p>Check out the resources below:</p>
-            <ul>
-                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
-                <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Try This!</h2>
-            <button id="alertButton">Click Me</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 My First Webpage</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- Linking JavaScript File -->
+  <script src="script.js"></script>
 </body>
 </html>
